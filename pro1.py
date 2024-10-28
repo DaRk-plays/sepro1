@@ -1,3 +1,4 @@
+#%%
 import os
 import pdfplumber
 import pandas as pd
@@ -6,10 +7,6 @@ import spacy
 from nltk.corpus import stopwords
 import string
 
-#%%
-resume_main_folder = "D:\SE project\data\archive (2)\data\data"
-
-csv_file_path = "D:\SE project\data\archive (1)\postings.csv"
 #%%
 nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
@@ -30,3 +27,5 @@ def preprocess_text(text):
     cleaned_text = ' '.join(tokens)
 
     return cleaned_text
+
+
