@@ -45,4 +45,13 @@ def process_resumes_from_nested_folders(main_folder):
                 extracted_text = extract_text_from_pdf(pdf_path)
                 resumes_data[file] = extracted_text
     return resumes_data
+# %%
+def process_job_descriptions(csv_path):
+    job_data = pd.read_csv(csv_path)
+
+    # Assuming the job description column is named 'description'
+    job_data['processed_description'] = job_data['description'].apply(preprocess_text)
+
+    return job_data
+
 
