@@ -58,4 +58,14 @@ def process_job_descriptions(csv_path):
 resume_main_folder = r"D:\SE project\data\archive (2)\data\data"
 
 csv_file_path = r"D:\SE project\data\archive (1)\postings.csv"
+# %%
+processed_resumes = process_resumes_from_nested_folders(resume_main_folder)
+# %%
+processed_job_descriptions = process_job_descriptions(csv_file_path)
 
+#%%
+print("Processed Resumes:", list(processed_resumes.items())[:2])
+
+# %%
+print("Processed Job Descriptions:", processed_job_descriptions.head())
+# %%
