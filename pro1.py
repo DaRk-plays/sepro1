@@ -54,4 +54,8 @@ def process_job_descriptions(csv_path):
 
     return job_data
 
+#%%
+resume_main_folder = r"D:\SE project\data\archive (2)\data\data"
+
+csv_file_path = r"D:\SE project\data\archive (1)\postings.csv"
 
