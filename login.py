@@ -65,3 +65,16 @@ def login():
             return redirect(url_for('login'))
 
     return render_template('login.html')
+#%%
+@app.route('/dashboard')
+def dashboard():
+    if 'user_id' not in session:
+        flash("Please log in to access the dashboard.")
+        return redirect(url_for('login'))
+    return "Welcome to your dashboard!"
+#%%
+@app.route('/logout')
+def logout():
+    session.pop('user_id', None)
+    flash("Logged out successfully!")
+    return redirect(url_for('login'))
