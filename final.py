@@ -1,5 +1,5 @@
 #%%
-from pro1 import processed_resumes, processed_job_descriptions
+from model import processed_resumes, processed_job_descriptions
 # %%
 from smiliarity_calculation import calculate_similarity
 # %%
