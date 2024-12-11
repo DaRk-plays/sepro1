@@ -88,10 +88,6 @@
       top: 10px;
       right: 10px;
       background-color: #1d4e89; /* Dark blue for profile button */
-      color: white;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
     }
 
     /* Inputs and Forms */
@@ -175,6 +171,28 @@
       border-radius: 10px;
     }
 
+    /* Feedback Buttons */
+    .feedback-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .feedback-buttons button {
+      width: 100%;
+      padding: 10px;
+      background-color: #64b5f6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .feedback-buttons button:hover {
+      background-color: #42a5f5;
+    }
+
     button:focus,
     input:focus,
     textarea:focus,
@@ -247,6 +265,15 @@
         <li>Web Developer - Match Score: 88%</li>
         <li>Project Manager - Match Score: 87%</li>
       </ul>
+      <h2>Feedback</h2>
+      <p>How satisfied are you with your match?</p>
+      <div class="feedback-buttons">
+        <button>Very Satisfied</button>
+        <button>Satisfied</button>
+        <button>Neutral</button>
+        <button>Dissatisfied</button>
+        <button>Very Dissatisfied</button>
+      </div>
     </section>
 
     <!-- Recruiter Dashboard -->
