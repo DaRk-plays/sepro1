@@ -11,3 +11,6 @@ for resume_name, resume_text in processed_resumes.items():
         score = calculate_similarity(resume_text, job_text)
         print(f"Job Title: {job_title} | Matching Score: {score * 100:.2f}%")
 # %%
+#adjusted NLP system
+
+# %%
