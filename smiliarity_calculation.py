@@ -46,3 +46,5 @@ def calculate_similarity_with_feedback(resume_text, job_text):
         feedback = "Poor match. The resume does not meet the job requirements well."
     
     return similarity_score, feedback
+
+#just to add feed back system better point.
